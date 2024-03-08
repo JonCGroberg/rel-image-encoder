@@ -45,14 +45,6 @@ The project includes the following class methods:
 7. `to_rle_string(rle_data)`: Translates RLE data into a human-readable representation with delimiters.
 8. `string_to_rle(rle_string)`: Translates a human-readable RLE string (with delimiters) into RLE byte data.
 
-## Submissions
-
-The project is divided into three parts:
-
-- Part A: Set up the standalone menu and basic functionality (loading images and displaying them).
-- Part B: Implement methods 1-6 and submit them on Zybooks.
-- Part C: Implement methods 7 and 8, complete the main method, and submit the whole program on Zybooks.
-
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
