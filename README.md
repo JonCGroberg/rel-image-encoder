@@ -5,6 +5,8 @@ Image encoding console application written in python
 
 > This project implements routines to encode and decode data for images using run-length encoding (RLE). RLE is a form of lossless compression used in many industry applications, including imaging. It is intended to take advantage of datasets where elements (such as bytes or characters) are repeated several times in a row in certain types of data (such as pixel art in games).
 
+![screenshot](./other/screenshot.png)
+
 ## Features
 
 - Encoding and decoding of raw image data using RLE
