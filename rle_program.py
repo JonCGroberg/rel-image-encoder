@@ -12,18 +12,18 @@ def to_hex_string(data: list[int]) -> str:
 
 def count_runs(flat_data: list[int]) -> int:
     count = 0
-    running_count = 0 # this gets reset everytime a run ends
+    running_count = 0  # this gets reset everytime a run ends
     current = None
 
     for element in flat_data:  # for each element, check if it is a new number
-        if running_count >= 15: # runs have a limit of 15
+        if running_count >= 15:  # runs have a limit of 15
             count += 1
             running_count = 0
         if element != current:
             count += 1
             running_count = 0
             current = element
-        else: # else they are equal
+        else:  # else they are equal
             running_count += 1
 
     return count
@@ -84,10 +84,18 @@ def string_to_data(data_string: str) -> list[int]:
 
     return arr
 
+
 # run length is in decimal, run value is in hexadecimal with ':' as delimiter
 def to_rle_string(rle_data: list[int]) -> str:
-    pass
+    string = ""
 
+    for i in range(0, len(rle_data), 2):
+        delimiter = "" if i == len(rle_data)-2 else ":"  # if it's the last two elements make delimiter is blank
+        run_bin_str = str(rle_data[i])
+        value_hex_str = to_hex_string([(rle_data[i + 1])])  # converts to hex string by placing it in an empty array
+        string += run_bin_str + value_hex_str + delimiter
+
+    return string
 
 
 if __name__ == '__main__':

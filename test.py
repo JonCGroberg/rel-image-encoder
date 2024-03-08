@@ -11,3 +11,4 @@ print(encode_rle(
 print(get_decoded_length([3, 15, 6, 4]))
 print(string_to_data("3f64"))
 print(decode_rle([3,15,6,4]))
+print(to_rle_string([15,15,6,4]))
